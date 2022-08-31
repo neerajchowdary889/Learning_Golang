@@ -13,9 +13,16 @@ func cal(Num3 int, Num4 int) (int, int) {
 	return Mul, Mod
 }
 
+func vals() (int, int) {
+	return 9, 12
+}
+
 func main() {
 	Add := add(21, 41)
 	fmt.Println(Add)
 	Res1, Res2 := cal(31, 51)
 	fmt.Println(Res1, Res2)
+	a, b := vals()
+	fmt.Println(a, b, "a and b")
+
 }

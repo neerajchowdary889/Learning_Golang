@@ -17,7 +17,7 @@ func switches() {
 	case 4:
 		fmt.Println(4, "Switch case")
 	default:
-		fmt.Println("Wrong Input")
+		fmt.Println(inp, "Wrong Input")
 	}
 
 }

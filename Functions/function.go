@@ -14,7 +14,20 @@ func cal(Num3 int, Num4 int) (int, int) {
 }
 
 func vals() (int, int) {
+	// Multiple return function
 	return 9, 12
+}
+
+func SumAll(num ...int) {
+	// variadic function
+	// dynamic in nature
+	// num is a array
+	fmt.Println(num, " ")
+	temp := 0
+	for i := 0; i < len(num); i++ {
+		temp += num[i]
+	}
+	fmt.Println(temp, "SumAll")
 }
 
 func main() {
@@ -24,5 +37,5 @@ func main() {
 	fmt.Println(Res1, Res2)
 	a, b := vals()
 	fmt.Println(a, b, "a and b")
-
+	SumAll(1, 2, 3, 4, 5)
 }

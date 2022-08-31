@@ -30,6 +30,14 @@ func SumAll(num ...int) {
 	fmt.Println(temp, "SumAll")
 }
 
+var Name string
+
+func init() {
+	// First init will be initilized at any cost...
+	fmt.Println("init function...")
+	Name = "Neeraj Chowadary"
+}
+
 func main() {
 	Add := add(21, 41)
 	fmt.Println(Add)
@@ -38,4 +46,5 @@ func main() {
 	a, b := vals()
 	fmt.Println(a, b, "a and b")
 	SumAll(1, 2, 3, 4, 5)
+	fmt.Printf("init function testing-- %s", Name)
 }

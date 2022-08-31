@@ -11,5 +11,6 @@ func main() {
 		fmt.Println("Hello")
 	} else {
 		fmt.Println("bye")
+		fmt.Println("The End...")
 	}
 }

@@ -13,4 +13,5 @@ func main() {
 		fmt.Println("bye")
 		fmt.Println("The End...")
 	}
+	switches()
 }

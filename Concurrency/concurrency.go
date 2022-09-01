@@ -15,19 +15,21 @@ func main() {
 
 	go channel("Valorent", c)
 
-	for {
-		msg, open := <-c
-		if open {
-			fmt.Println(msg)
-		} else {
-			break
-		}
-
+	//for {
+	//	msg, open := <-c
+	//	if open {
+	//		fmt.Println(msg)
+	//	} else {
+	//		break
+	//	}
+	//}
+	for msg := range c {
+		fmt.Println(msg)
 	}
 }
 func count(data string) {
 	for i := 1; i < 15; i++ {
 		fmt.Println("Nerd", data, i)
-		time.Sleep(time.Millisecond * 500)
+		time.Sleep(time.Millisecond * 300)
 	}
 }

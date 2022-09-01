@@ -48,5 +48,5 @@ func main() {
 	SumAll(1, 2, 3, 4, 5)
 	// %T allow us to print the type of variable.
 	// %v allow us to print the Int value of variable and even String value.
-	fmt.Printf("init function testing-- %s", Name)
+	fmt.Printf("init function testing-- %s\n", Name)
 }

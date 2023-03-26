@@ -49,10 +49,10 @@ func maps() {
 }
 func mapsstruct() {
 	a1 := student{"Neeraj", 21067, "AIE"}
-	a2 := student{"Ayyappa", 21084, "AIE"}
-	a3 := student{"Subhash", 21036, "AIE"}
-	a4 := student{"Manasa", 21057, "AIE"}
-	a5 := student{"Akshaya", 21051, "AIE"}
+	a2 := student{"Neeraj1", 31067, "AIE"}
+	a3 := student{"Neeraj2", 41067, "AIE"}
+	a4 := student{"Neeraj3", 51067, "AIE"}
+	a5 := student{"Neeraj4", 61067, "AIE"}
 
 	Studentmap := map[int]student{
 		1: a1,
